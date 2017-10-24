@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+<title>Alpha-Blog!</title>
+<link type="text/css" rel="stylesheet" media="screen" href="estilos.css" />
+<meta charset="Content-Type: text/html; charset=utf-8"></meta>
+<style>
+    table, th, td {
+        border: 1px solid_black;
+    }
+    pre.round3 {
+    border: 2px solid black;
+    border-radius: 12px;
+</style>
+
+</head>
+    
+<body>
+    <div id="site">
+    <div id="header" style="background-color:LightGreen;">
+        <h1 style="text-align:center;font-size:60px;">This is the Alpha-Blog!</h1>
+        <hr>
+        <%= link_to 'Home', root_path %>
+        <%= link_to 'About', about_path %>
+        <hr>
+    </div>
+    <!-- abrimos a div conteudo -->
+    <div id="conteudo" align="center">
+        <img class="displayed"  src="/assets/capa.jpg" alt="Plantação de Girassóis" width=1000 height=250>
+        <div id="conteudo-left">
+            <pre class="round3">
+left content left content left content left content
+left content left content left content left content
+left content left content left content left content
+left content left content left content left content
+            </pre>
+        </div>
+        <div id="conteudo-right" align:"center">
+            <pre class="round3">
+right content right content right content right content
+right content right content right content right content
+right content right content right content right content
+right content right content right content right content
+            </pre>
+        </div>
+    </div>
+    <!-- fechamos a div conteudo -->
+    <div id="footer" style="background-color:LightGreen;">
+        <p align="center"><i>Copyright<sup>@</sup>Marttini Souza</i></p>
+    </div>
+    </div>
+</body>
+</html>
