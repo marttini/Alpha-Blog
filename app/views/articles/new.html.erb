@@ -1,0 +1,16 @@
+<h1> Create your Articles </h1>
+
+<%= form_for @articles do |m| %>
+  <p>
+    <%= m.label :title %><br/>
+    <%= m.text_field :title %>
+  </p>
+  <p>
+    <%= m.label :description %><br/>
+    <%= m.text_area :description %>
+  </p>
+  <p>
+    <%= m.submit %>
+  </p>
+
+<% end %>
